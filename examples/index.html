@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Timeago examples</title>
+  <script type="text/javascript" src="../build/build.js"></script>
+  <script type="text/javascript">
+    var day = 1000 * 60 * 60 * 24;
+  </script>
+</head>
+<body>
+  <section>
+    <h4>Simple install and init.</h4>
+    <div id="now" data-time=""></div>
+    <script type="text/javascript">
+      (function() {
+        var el = document.getElementById('now');
+        var timeago = require('timeago');
+        el.setAttribute('data-time', new Date());
+
+        timeago('#now');
+      })();
+    </script>
+  </section>
+
+  <section>
+    <h4>This should output yesterday</h4>
+    <div id="yesterday" data-time=""></div>
+    <script type="text/javascript">
+      (function() {
+        var el = document.getElementById('yesterday');
+        var yesterday = new Date(Date.now() - day);
+        var timeago = require('timeago');
+        el.setAttribute('data-time', yesterday);
+
+        timeago('#yesterday');
+      })();
+    </script>
+  </section>
+
+</body>
+</html>
