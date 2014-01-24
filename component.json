@@ -1,16 +1,16 @@
 {
   "name": "timeago",
-  "repo": "cristiandouce/timeago",
   "description": "Simple timeago component with moment.js i18n support.",
   "version": "0.0.1",
   "keywords": [ "time", "ago", "i18n" ],
   "dependencies": {
     "cristiandouce/moment": "develop"
   },
-  "development": {},
-  "license": "MIT",
-  "main": "index.js",
   "scripts": [
     "index.js"
-  ]
+  ],
+  "main": "index.js",
+  "development": {},
+  "repo": "cristiandouce/timeago",
+  "license": "MIT"
 }
